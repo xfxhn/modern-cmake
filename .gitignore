@@ -1,0 +1,12 @@
+# Qt creator junk
+*.user
+cmake-build-debug
+# Eclipse junk
+.project
+.cproject
+.idea
+# Visual Studio junk
+*.vs
+
+# anything build related
+*build*
