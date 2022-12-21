@@ -1,0 +1,4 @@
+# 比如这样 下面这行会替换为cmake里的var变量 #define var3 "var3string"
+# 这里可以设置这个库其他依赖的库等等什么的，具体看自己需求
+# #define 
+include(${CMAKE_CURRENT_LIST_DIR}/noms-veg-targets.cmake)

@@ -4,10 +4,20 @@ cmake_minimum_required(VERSION 3.0)
 set(project noms)
 set(version 1.0.0)
 
-project(${project})
+project(noms)
+
+
+#[[在Linux中，源代码中的所有符号是默认导出的，而在Windows下恰好相反。
+默认全部导出的好处免去繁琐的宏定义用来表示符号，缺点是体积、封装性变差。
+__declspec标识一个符号是否为需要输出的符号[2]，如果你需要输出所有的符号，
+可以考虑使用set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)，这样就算你不显式指出所有符号，你也可以生成编译所需的*.lib]]
+
+if (MSVC)
+    set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+endif ()
 
 #设置安装目录，可以从cmake命令行传进来
-#SET(CMAKE_INSTALL_PREFIX "C:/Users/Administrator/Desktop/cmakestudy/nomnoms/install")
+set(CMAKE_INSTALL_PREFIX "C:/Users/Administrator/Desktop/cmakestudy/nomnoms/install1")
 
 
 #加载这个库的两个模块

@@ -9,13 +9,12 @@ project(test LANGUAGES CXX)
 
 set(CMAKE_PREFIX_PATH C:/Users/Administrator/Desktop/cmakestudy/nomnoms/install)
 
-find_package(noms 1.0.0 REQUIRED COMPONENTS fruit veg)
+find_package(noms 1.0.0 REQUIRED COMPONENTS fruit)
 
 add_executable(test src/main.cpp)
 
 target_link_libraries(test
         PRIVATE
         noms::fruit
-        noms::veg
         )
 

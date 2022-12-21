@@ -37,7 +37,6 @@ install(EXPORT ${component}-targets
         )
 
 
-set(var aaa)
 #用于自定义编译选项或者自定义宏的场景
 #比如使用者来编译这个库的时候 比如开启和关闭某个功能，需要编译者传入 比如设置一个set(var aaa)
 #这个命令把${component}-config.cmake.in 里@var@或者${var}替换为cmake中指定的值,这样可以控制以什么参数生成这个库
