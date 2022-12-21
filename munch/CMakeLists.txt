@@ -6,7 +6,7 @@ project(test LANGUAGES CXX)
 
 
 
-
+#设置你安装库的目录
 set(CMAKE_PREFIX_PATH C:/Users/Administrator/Desktop/cmakestudy/nomnoms/install)
 
 find_package(noms 1.0.0 REQUIRED COMPONENTS fruit)
