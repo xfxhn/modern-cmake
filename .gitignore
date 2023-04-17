@@ -1,6 +1,7 @@
 # Qt creator junk
 *.user
 cmake-build-debug
+out
 # Eclipse junk
 .project
 .cproject
